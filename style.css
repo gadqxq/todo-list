@@ -1,0 +1,9 @@
+#main-box {
+background-color: #feff9c;
+    width: 40vw;
+    height: 90vh;
+    margin: auto;
+    border: 2px solid #0000008f;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px #888888;
+}
