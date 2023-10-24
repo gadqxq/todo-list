@@ -8,6 +8,24 @@
 </head>
 <body>
     <div id="main-box">
-    </Div>
-</body>
+        <h1>To-Do List</h1>
+       <div id="input-container">
+            <!-- Inndatakontainer for oppgaveinntasting -->
+            <input type="text" id="taskInput" placeholder="Legg til en oppgave...">
+            <!-- Tekstinndatafelt for oppgaveinntasting -->
+            <button id="addTaskButton">Legg til</button>
+            <!-- Knapp for å legge til oppgaver -->
+            <button id="deleteSelectedTasks">Slett valgte</button>
+            <!-- Knapp for å slette valgte oppgaver -->
+        </div>
+        <div id="taskListContainer">
+            <!-- Beholder for oppgavelisten -->
+            <div id="taskList"></div>
+            <!-- Selve oppgavelisten -->
+        </div>
+        <p id="taskStatus">0/0 fullført</p>
+        <!-- Tekst for å vise oppgavestatus -->
+    </div>
+    <script src="script.js"></script>
+    </body>
 </html>
