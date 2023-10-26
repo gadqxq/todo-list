@@ -1,9 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Roboto:wght@400;500&display=swap');
+/* Setter bakgrunnsfarge og font for hele dokumentet */
+body {
+    background-color: #eae7dc;
+    font-family: Metrophobic;
+}
+
+/* Definerer stil for h1-elementer */
+h1 {
+    font-style: bold;
+    color: #e85a4f;
+}
+
+/* Stil for hovedboksen */
 #main-box {
-background-color: #feff9c;
     width: 40vw;
     height: 90vh;
     margin: auto;
-    border: 2px solid #0000008f;
-    border-radius: 5px;
-    box-shadow: 0 10px 25px #888888;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Stil for input-container */
+#input-container {
+    margin: 20px 0;
+}
+
+/* Stil for tekstfelt */
+input[type="text"] {
+    width: 70%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    margin-right: 10px;
+    outline: none;
+}
+
+/* Stil for knappen deleteSelectedTasks */
+#deleteSelectedTasks {
+    margin-top: 4%;
+}
+
+/* Stil for slettknapp (deleteSelectedTasks) */
+button#deleteSelectedTasks {
+    background-color: #eae7dc;
+    color: #757472;
+    border: 1px solid #807f7a;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 1%;
+}
+
+/* Hover-effekt for slettknappen */
+button#deleteSelectedTasks:hover {
+    background-color: #d3d1c8;
+}
+
+/* Stil for knappen addTaskButton */
+button#addTaskButton {
+    background-color: #eae7dc;
+    color: #757472;
+    border: 1px solid #807f7a;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 1%;
+}
+
+/* Hover-effekt for legg til oppgave-knappen */
+button#addTaskButton:hover {
+    background-color: #d3d1c8;
+}
+
+/* Stil for beholderen til oppgavelisten */
+#taskListContainer {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+/* Stil for selve oppgavelisten */
+#taskList {
+    text-align: left;
+}
+
+/* Stil for oppgavestatusen */
+#taskStatus {
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;
 }
