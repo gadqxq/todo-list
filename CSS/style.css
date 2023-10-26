@@ -1,0 +1,132 @@
+ 
+/* Importerer skrifttyper og generelle stiler fra Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Metrophobic&family=Roboto:wght@400;500&display=swap");
+/* Setter generelle stiler for alle elementer på siden */
+ * {
+     font-family: Metrophobic;
+}
+/* Stil for hele nettsiden */
+ body {
+     background-color: #eae7dc;
+    /* Setter bakgrunnsfargen*/
+     margin: 0;
+     padding: 0;
+     text-align: center;
+    /* Justerer tekst til senter av siden */
+}
+/* Stil for logoen */
+ #logo, #logoDiv {
+     position: fixed;
+     top: 5px;
+     left: 5px;
+     height: 15vh;
+     width: 15vh;
+}
+/* Stil for hovedboksen */
+ #main-box {
+     margin: 20px auto;
+    /* Setter margin øverst og nederst til 20 piksler, og horisontalt til automatisk plassering */
+     padding: 20px;
+     max-width: 400px;
+    /* Begrenser maksimal bredde til 400 piksler */
+}
+ h1 {
+     color: #e85a4f;
+}
+ #input-container {
+     margin-top: 20px;
+    /* Legger til toppmargin på 20 piksler */
+}
+/* Stil for input boksen */
+ #taskInput {
+     width: 70%;
+    /* Setter bredde til 70% av forelderens bredde */
+     padding: 8px;
+     border: 1px solid #ccc;
+    /* Legger til en tynn kantlinje rundt inndatafeltet */
+     border-radius: 4px;
+    /* Gir avrundede hjørner */
+    outline: none;
+    /*skrur av outline*/
+}
+/* Stil for knappene */
+ #addTaskButton, #removeAllTasksButton {
+     background-color: #e85a4f;
+    /* Bakgrunnsfarge for knappene er rødlig oransje */
+     color: #fff;
+    /* Tekstfarge for knappene er hvit */
+     border: none;
+    /* Fjerner kantlinje */
+     padding: 8px 16px;
+    /* Inneholder padding for knappene */
+     margin-left: 5px;
+    /* Legger til venstre margen på 5 piksler */
+     border-radius: 4px;
+    /* Gir avrundede hjørner */
+     cursor: pointer;
+    /* Endrer musepekeren til en hånd når du holder over knappen */
+     transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Gir jevne overganger for bakgrunnsfarge og transformasjon */
+     margin-top: 10px;
+    /* Legger til toppmargen på 10 piksler */
+}
+ #addTaskButton:hover, #removeAllTasksButton:hover {
+     background-color: #e85a4f;
+    /* Bakgrunnsfargeendring ved musepekeren over knappen */
+     transform: scale(1.05);
+    /* Skaleringseffekt ved hover */
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* Skyggeeffekt */
+}
+ #addTaskButton:active, #removeAllTasksButton:active {
+     background-color: #e85a4f;
+    /* Bakgrunnsfargeendring ved klikk på knappen */
+     transform: scale(0.95);
+    /* Skaleringseffekt ved klikk */
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* Skyggeeffekt */
+}
+/* Stil for oppgavelisten og status */
+ #taskListContainer {
+     margin-top: 20px;
+    /* Legger til toppmargen på 20 piksler */
+     max-height: 60vh;
+    /* Begrenser maksimal høyde til 60% av visningens høyde */
+     overflow-y: auto;
+    /* Legger til vertikal rullefelt hvis innholdet overskrider maksimal høyde */
+}
+ #taskList {
+     background-color: #f9f9f9;
+    /* Setter bakgrunnsfargen til lys grå */
+     padding: 10px;
+    /* Inneholder padding for oppgavelisten */
+     border: 1px solid #ccc;
+    /* Legger til en tynn kantlinje rundt oppgavelisten */
+     border-radius: 4px;
+    /* Gir avrundede hjørner */
+     min-height: 57vh;
+    /* Setter minimal høyde til 57% av visningens høyde */
+     text-align: left;
+    /* Justerer tekst til venstre */
+}
+ #taskStatus {
+     font-weight: bold;
+    /* Setter fet skrift for statusmeldingen */
+     position: absolute;
+    /* Absolutt posisjonering */
+     bottom: 0;
+    /* Plasserer nederst på forelderdiven */
+     left: 50%;
+    /* Plasserer horisontalt sentrert */
+     transform: translateX(-50%);
+    /* Justerer horisontal posisjon for å sentrere */
+     margin: 20px 0;
+    /* Setter topp- og bunnmargen til 20 piksler og null venstremargen */
+}
+
+ .delete-button {
+    cursor: pointer; /* Endrer musepekeren til en hånd når du holder over knappen */
+    float: right; /* Flyter elementet til høyre innenfor forelderdiven */
+    width: 20px; /* Setter bredden til 20 piksler */
+    height: 20px; /* Setter høyden til 20 piksler */
+}
