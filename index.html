@@ -4,28 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
+    <div id="logoDiv">
+        <img id="logo" src="./Img/to-listy-high-resolution-logo-transparent.svg"> <!-- Inkluderer et bilde for logoen -->
+    </div>
     <div id="main-box">
-        <h1>To-Do List</h1>
-       <div id="input-container">
-            <!-- Inndatakontainer for oppgaveinntasting -->
-            <input type="text" id="taskInput" placeholder="Legg til en oppgave...">
-            <!-- Tekstinndatafelt for oppgaveinntasting -->
-            <button id="addTaskButton">Legg til</button>
-            <!-- Knapp for å legge til oppgaver -->
-            <button id="deleteSelectedTasks">Slett valgte</button>
-            <!-- Knapp for å slette valgte oppgaver -->
+        <h1>To-Do List</h1> <!-- Overskrift for oppgavelisten -->
+        <div id="input-container">
+            <input type="text" id="taskInput" placeholder="Legg til en oppgave..."> <!-- Inndatafelt for oppgaver -->
+            <button id="addTaskButton">Legg til</button> <!-- Knapp for å legge til oppgaver -->
+            <button id="removeAllTasksButton">Fjern oppgaver</button> <!-- Knapp for å fjerne alle oppgaver -->
         </div>
         <div id="taskListContainer">
-            <!-- Beholder for oppgavelisten -->
-            <div id="taskList"></div>
-            <!-- Selve oppgavelisten -->
+            <div id="taskList"></div> <!-- Container for oppgavelisten -->
         </div>
-        <p id="taskStatus">0/0 fullført</p>
-        <!-- Tekst for å vise oppgavestatus -->
+        <p id="taskStatus">0/0 fullført</p> <!-- Status for fullførte oppgaver -->
     </div>
-    <script src="script.s"></script>
+    <script src="./JavaScript/script.js"></script>
     </body>
 </html>
