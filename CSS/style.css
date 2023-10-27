@@ -130,3 +130,10 @@
     width: 20px; /* Setter bredden til 20 piksler */
     height: 20px; /* Setter høyden til 20 piksler */
 }
+
+.taskItem {
+    background: #e85a4f6b;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
