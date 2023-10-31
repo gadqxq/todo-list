@@ -19,6 +19,19 @@ function addTask() {
     }
 }
 
+// Funksjon for å oppdatere status for fullførte oppgaver
+function updateTaskStatus() {
+    // Går gjennom oppgavelisten og oppdaterer stiler for fullførte oppgaver
+    tasks.forEach((task, index) => {
+        const taskItem = taskList.children[index].querySelector('.task-item');
+        taskItem.classList.toggle('completed-task', task.completed);
+    });
+    // Beregner antall fullførte og totale oppgaver
+    const completedTasks = tasks.filter(task => task.completed).length;
+    const totalTasks = tasks.length;
+    taskStatus.textContent = `${completedTasks}/${totalTasks} fullført`; // Oppdaterer statusmeldingen
+}
+
 // Funksjon for å vise oppgavene i oppgavelisten
 function displayTasks() {
     taskList.innerHTML = ""; // Tømmer oppgavelisten før oppdatering
