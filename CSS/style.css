@@ -192,3 +192,59 @@ body {
   height: 20px; 
   /* Setter høyden til 20 piksler */
 }
+
+/* Stil for individuelle oppgaver */
+.task-box {
+  border: 1px solid #ccc; 
+  /* Legger til en tynn kantlinje rundt oppgaveboksen */
+  padding: 10px; 
+  /* Inneholder padding for oppgaveboksen */
+  margin: 5px 0; 
+  /* Legger til en øvre og nedre marg på 5 piksler */
+  max-width: 100%; 
+  /* Begrenser maksimal bredde til 100% av forelderens bredde */
+}
+
+.task-item {
+  display: flex; 
+  /* Bruker flex-boks for oppgaveelementet */
+  align-items: center; 
+  /* Sentrerer innholdet vertikalt */
+  justify-content: space-between; 
+  /* Plasserer elementer i motsatte ender */
+  transition: text-decoration 0.2s; 
+  /* Overgangseffekt for tekstdekorasjon */
+  max-width: 100%; 
+  /* Begrenser maksimal bredde til 100% av forelderens bredde */
+}
+
+.task-item label {
+  flex: 1; 
+  /* Gir fleksibel vektdeling for label */
+  word-wrap: break-word; 
+  /* Bryter lange ord ved behov */
+  max-width: 80%; 
+  /* Begrenser maksimal bredde til 90% av forelderens bredde */
+}
+
+.task-item:hover {
+  text-decoration: line-through; 
+  /* Gir strek over tekst ved hover */
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px; 
+  /* Legger til høyremargen på 10 piksler */
+}
+
+.completed-task {
+  text-decoration: line-through; 
+  /* Gir strek over tekst for fullførte oppgaver */
+  color: gray; 
+  /* Endrer tekstfargen til grå for fullførte oppgaver */
+}
+
+.checkbox {
+  accent-color: #e85a4f; 
+  /* Setter aksentfarge for sjekkboksen */
+}
