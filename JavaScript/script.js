@@ -66,3 +66,11 @@ function displayTasks() {
     });
     updateTaskStatus(); // Oppdaterer status for fullførte oppgaver
 }
+
+addTaskButton.addEventListener("click", addTask); // Legger til hendelseslytter for "Legg til" -knappen
+taskInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        addTask(); // Legger til oppgave når Enter-tasten trykkes
+    }
+});
