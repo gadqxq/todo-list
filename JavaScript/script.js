@@ -32,6 +32,12 @@ function updateTaskStatus() {
     taskStatus.textContent = `${completedTasks}/${totalTasks} fullført`; // Oppdaterer statusmeldingen
 }
 
+// Funksjon for å slette en oppgave
+function deleteTask(index) {
+    tasks.splice(index, 1); // Fjerner oppgaven fra arrayen
+    displayTasks(); // Viser oppgavene på nytt
+}
+
 // Funksjon for å vise oppgavene i oppgavelisten
 function displayTasks() {
     taskList.innerHTML = ""; // Tømmer oppgavelisten før oppdatering
